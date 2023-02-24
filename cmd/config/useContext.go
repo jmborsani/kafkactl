@@ -16,7 +16,7 @@ func newUseContextCmd() *cobra.Command {
 
 	var cmdUseContext = &cobra.Command{
 		Use:     "use-context",
-		Aliases: []string{"useContext"},
+		Aliases: []string{"useContext", "use"},
 		Short:   "switch active context",
 		Long:    `command to switch active context`,
 		Args:    cobra.MinimumNArgs(1),

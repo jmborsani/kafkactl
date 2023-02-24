@@ -13,7 +13,7 @@ func newGetContextsCmd() *cobra.Command {
 
 	var cmdGetContexts = &cobra.Command{
 		Use:     "get-contexts",
-		Aliases: []string{"getContexts"},
+		Aliases: []string{"getContexts", "get"},
 		Short:   "list configured contexts",
 		Long:    `Output names of all configured contexts`,
 		Run: func(cmd *cobra.Command, args []string) {

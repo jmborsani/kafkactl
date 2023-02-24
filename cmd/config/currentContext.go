@@ -9,7 +9,7 @@ import (
 func newCurrentContextCmd() *cobra.Command {
 	var cmdCurrentContext = &cobra.Command{
 		Use:     "current-context",
-		Aliases: []string{"currentContext"},
+		Aliases: []string{"currentContext", "current"},
 		Short:   "show current context",
 		Long:    `Displays the name of context that is currently active`,
 		Run: func(cmd *cobra.Command, args []string) {
