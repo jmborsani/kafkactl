@@ -36,7 +36,6 @@ func newSelectContextCmd() *cobra.Command {
 			prompt := &survey.Select{
 				Message: "Choose a context:",
 				Options: contextsList,
-				Default: "",
 			}
 
 			err := survey.AskOne(prompt, &context)
