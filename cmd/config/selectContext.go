@@ -40,7 +40,7 @@ func newSelectContextCmd() *cobra.Command {
 
 			err := survey.AskOne(prompt, &context)
 			if err != nil {
-				output.Fail(errors.Wrap(err, "unable to display the options for selection"))
+				output.Fail(errors.Wrap(err, "unable to select cluster context"))
 			}
 
 			viper.Set("current-context", context)
